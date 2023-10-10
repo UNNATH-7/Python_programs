@@ -1,0 +1,4 @@
+#program for converting hours to minutes
+n=int(input('enter hours value'))
+m=n*60
+print(m)
