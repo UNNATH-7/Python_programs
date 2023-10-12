@@ -1,0 +1,6 @@
+#program for number greater than 50 or not
+n=int(input('enter n value:'))
+if n>50:
+    print('given num is greater than 50')
+else:
+    print('given num is not greater than 50')
