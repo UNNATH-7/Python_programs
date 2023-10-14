@@ -1,0 +1,34 @@
+#program for shopping mall Bill
+shirt=1200
+track_pant=750
+Tshirt=340
+print('*****WELCOME TO YOUR WISH MALL*****')
+cname=input('Enter customer name:')
+cphno=input('Enter Phno:')
+shirts=int(input('Enter no of shirts'))
+track_pants=int(input('Enter no of track pants'))
+Tshirts=int(input('Enter no of T-shirts'))
+pc=input('Enter promo code:')
+bill=(shirt*shirts)+(track_pant*track_pants)+(Tshirt*Tshirts)
+if pc=='HOLI' or pc=='holi':
+    disc=bill*50/100
+elif pc=='SUNDAY' or pc=='sunday':
+    disc==bill*40/100
+elif bill>=2000:
+    disc=bill*20/100
+elif bill>=1000:
+    disc=bill*10/100
+elif bill>=500:
+    disc=bill*5/100
+else:
+    disc=bill*3/100
+tbill=bill-disc
+gst=tbill*12/100
+obill=tbill+gst
+print('customer name:',cname)
+print('customer phno:',cphno)
+print('bill:',bill)
+print('Discount:',disc)
+print('Gst 12%:',gst)
+print('Bill to be paid:',obill)
+print('*Thank you!Visit Again**')
