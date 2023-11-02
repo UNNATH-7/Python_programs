@@ -1,0 +1,11 @@
+#program to print list with updating an element
+n=int(input())
+l=[]
+for i in range(1,n+1):
+    a=int(input())
+    l.append(a)
+print(l)
+x=int(input())
+v=int(input())
+l[x]=v
+print(l)
