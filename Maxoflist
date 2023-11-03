@@ -1,0 +1,7 @@
+# program to print maximum element of the list
+n=int(input())
+l=[]
+for i in range(n):
+    x=int(input())
+    l.append(x)
+print(max(l))
