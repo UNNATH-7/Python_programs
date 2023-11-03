@@ -1,0 +1,11 @@
+# program to concatenate list and display minimum value
+list1 = list(map(int, input().split()))
+
+list2 = list(map(int, input().split()))
+
+ml = list1 + list2
+
+min_value = min(ml)
+
+print(ml)
+print(min_value)
