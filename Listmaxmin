@@ -1,0 +1,10 @@
+#program to print minimum and maximum values in a list 
+a=[]
+size=int(input("enter the size of the list:"))
+for i in range(size):
+    val=int(input("enter the number:"))
+    a.append(val)
+maxval=max(a)
+minval=min(a)
+print("max number=",maxval)
+print("min number=",minval)
