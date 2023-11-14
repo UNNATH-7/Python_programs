@@ -1,0 +1,7 @@
+#program to print first and last elements of list 
+my_list = [input(f"Enter element {i + 1}: ") for i in range(int(input("Enter the number of elements: ")))]
+if my_list:
+    print("First element:", my_list[0])
+    print("Last element:", my_list[-1])
+else:
+    print("List is empty.")
