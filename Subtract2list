@@ -1,0 +1,10 @@
+#program to print the subtraction of two lists 
+size = int(input())
+list1 = list(map(int, input().split()))
+list2 = list(map(int, input().split()))
+
+resultant_list = []
+for i in range(size):
+    resultant_list.append(list1[i] - list2[i])
+
+print(' '.join(map(str, resultant_list)))
