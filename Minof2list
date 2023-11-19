@@ -1,0 +1,6 @@
+#program to print minimum of two lists 
+list1 = list(map(int, input().split()))
+list2 = list(map(int, input().split()))
+
+min_value = min(min(list1), min(list2))
+print(min_value)
