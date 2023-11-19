@@ -1,0 +1,11 @@
+#program to print adding of two lists and print minimum value 
+size = int(input())
+list1 = list(map(int, input().split()))
+list2 = list(map(int, input().split()))
+
+added_list = []
+for i in range(size):
+    added_list.append(list1[i] + list2[i])
+
+min_value = min(added_list)
+print(f"{min_value}({','.join(map(str, added_list))})")
