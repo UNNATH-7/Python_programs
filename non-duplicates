@@ -1,0 +1,9 @@
+#program for non duplicates
+n=int(input ())
+l=list(map(int,input(). split()))
+num=[]
+for i in l:
+    if l.count(i)==1:
+        if i not in num:
+            num.append(i)
+print(num)
