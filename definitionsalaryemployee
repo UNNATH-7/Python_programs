@@ -1,0 +1,39 @@
+#program for generating a salary bill for employee using definitions
+  def calculate_tax(net_salary):
+    if net_salary > 50000:
+        return net_salary * 0.05
+    elif net_salary > 35000:
+        return net_salary * 0.03
+    elif net_salary > 20000:
+        return net_salary * 0.01
+    else:
+        return 0
+
+def main():
+   
+        empno = input("Enter Employee Number: ")
+        empname = input("Enter Employee Name: ")
+        designation = input("Enter Employee Designation: ")
+        basic = float(input("Enter Basic Salary: "))
+        hra = float(input("Enter HRA: "))
+        da = float(input("Enter DA: "))
+        ta = float(input("Enter TA: "))
+        
+        netsalary = basic + hra + da + ta
+        tax = calculate_tax(netsalary)
+        
+        print("Empno:", empno)
+        print("Empname:", empname)
+        print("Designation:", designation)
+        print("Basic Salary:", basic)
+        print("HRA:", hra)
+        print("DA:", da)
+        print("TA:", ta)
+        print("Net Salary:", netsalary)
+        print("Tax:", tax)
+        print()
+
+if _name_ == "_main_":
+
+
+    main()
